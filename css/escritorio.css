@@ -1,0 +1,164 @@
+/* ====== ESTILOS GENERALES DEL ESCRITORIO ====== */
+
+:root {
+    /* Paleta cálida y suave */
+    --color-fondo: #f8f3ed;
+    --color-panel: #ffffff;
+    --color-primario: #e07a45;
+    --color-primario-hover: #cf6a36;
+    --color-secundario: #f0c7a4;
+    --color-texto: #3d2e2c;
+    --color-texto-suave: #6b5c59;
+    --sombra: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    /* Bordes y futurismo */
+    --radius: 14px;
+    --transicion: 0.25s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.escritorio-container {
+    width: 95%;
+    max-width: 1300px;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+}
+
+/* ====== PANEL LATERAL (SIDEBAR) ====== */
+.sidebar {
+    width: 260px;
+    background: var(--color-panel);
+    border-radius: var(--radius);
+    padding: 25px 20px;
+    box-shadow: var(--sombra);
+}
+
+.sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 22px;
+    color: var(--color-primario);
+}
+
+/* Botones del menú */
+.sidebar .menu-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    background: var(--color-secundario);
+    border: none;
+    border-radius: var(--radius);
+    color: var(--color-texto);
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.sidebar .menu-btn:hover {
+    background: var(--color-primario);
+    color: #fff;
+}
+
+/* ====== ÁREA DE CONTENIDO PRINCIPAL ====== */
+.main-area {
+    flex: 1;
+    background: var(--color-panel);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+}
+
+.main-area h1 {
+    font-size: 28px;
+    margin-top: 0;
+    color: var(--color-primario);
+}
+
+/* ====== TARJETAS / WIDGETS ====== */
+.widget {
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    margin-bottom: 25px;
+    transition: var(--transicion);
+}
+
+.widget:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ====== TABLAS SENCILLAS ====== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table th {
+    background: var(--color-secundario);
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* ====== BOTÓN FUTURISTA ====== */
+.btn {
+    padding: 12px 20px;
+    background: var(--color-primario);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.btn:hover {
+    background: var(--color-primario-hover);
+    transform: translateY(-2px);
+}
+
+/* ====== INPUTS ====== */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid #f0d5c2;
+    border-radius: var(--radius);
+    font-size: 15px;
+    outline: none;
+    transition: var(--transicion);
+    background: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 5px rgba(224, 122, 69, 0.4);
+}
+
+/* ===== FOOTER DEL ESCRITORIO ===== */
+.footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    color: var(--color-texto-suave);
+}
