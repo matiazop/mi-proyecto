@@ -1,0 +1,56 @@
+@import url('estilo.css');
+
+/* ===== CONTENEDOR DE PERFIL ===== */
+.user-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--color-panel);
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    text-align: center;
+}
+
+.user-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--sombra);
+    margin-bottom: 20px;
+}
+
+.user-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.user-info p {
+    padding: 10px;
+    background: #fff;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    border: 1px solid var(--color-borde);
+}
+
+/* Botón editar */
+.btn-edit {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: var(--color-primario);
+    border: none;
+    color: #fff;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.btn-edit:hover {
+    background: var(--color-primario-hover);
+}

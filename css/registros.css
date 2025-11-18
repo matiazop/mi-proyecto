@@ -1,0 +1,63 @@
+@import url('estilo.css');
+
+/* ===== CONTENEDOR ===== */
+.registros-wrapper {
+    width: 100%;
+    margin: 30px auto;
+    background: var(--color-panel);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+}
+
+/* ===== TABLA ===== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table th {
+    background: var(--color-secundario);
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.table tr:hover {
+    background: #fff8f0;
+    transition: var(--transicion);
+}
+
+/* Botones en tabla */
+.btn-small {
+    padding: 8px 14px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.btn-edit {
+    background: var(--color-secundario);
+}
+
+.btn-edit:hover {
+    background: var(--color-primario);
+    color: #fff;
+}
+
+.btn-delete {
+    background: #f39b7c;
+}
+
+.btn-delete:hover {
+    background: #e07a45;
+    color: #fff;
+}
